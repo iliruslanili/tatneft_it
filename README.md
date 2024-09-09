@@ -88,3 +88,5 @@ __Администирование:__
 __[Ссылка на схему в Figma](https://www.figma.com/board/cI0WJnxNH2Y0UqNBuuCuli/%D0%90%D1%80%D1%85%D0%B8%D1%82%D0%B5%D0%BA%D1%82%D1%83%D1%80%D0%B0-API?node-id=0-1&t=YnA63EQrN19yWw6j-1)__
 
 ![Архитектура](task_3/img/Архитектура.png)
+
+#Спасибо за внимание!
