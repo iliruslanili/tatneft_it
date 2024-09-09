@@ -27,11 +27,19 @@ async def get_site_data(url):
     return url
 
 
-async def main():
+async def main(urls=urls):
 
     tasks = [asyncio.create_task(get_site_data(url)) for url in urls]
 
     results = await asyncio.gather(*tasks, return_exceptions=True)
+    success = []
+    error = []
+
+    for i, result in enumerate(results):
+        if isinstance(result, Exception):
+            error.append(result)
+        else:
+            success.append(urls[i])
 
     success = [i for i in results if not isinstance(i, Exception)]
     errors = [urls[i] for i, result in enumerate(results) if isinstance(result, Exception)]
